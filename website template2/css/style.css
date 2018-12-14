@@ -1,0 +1,95 @@
+body {
+	margin: 0;
+	font-family: 'Roboto-Bold', sans-serif;
+}
+button:focus, input:focus {
+	outline: none;
+}
+.container {
+	width: 1280px;
+	margin: auto;
+
+}
+.button {
+	padding: 10px 26px;
+	margin-top: 28px;
+	background-color: #12b367;
+	color: #fff;
+	font-size: 16px;
+	transition: .3s;
+	border: none;
+}
+.button:hover {
+	background-color: #0d854c;
+	transition: .3s;
+	cursor: pointer;
+}
+.section-title {
+	color: #4f4f4f;
+	font-size: 33px;
+	font-weight: 300;
+}
+.contact {
+	margin-top: 100px;
+	margin-bottom: 80px;
+}
+
+input {
+	border: none;
+}
+.contact__title {
+	text-align: center;
+}
+.contact-form {
+	margin-top: 30px;
+	color: #fff;
+	text-align: center;
+}
+.contact-form__text {
+	color: #fff;
+	margin-bottom: 25px;
+}
+.radio {
+	margin-left: 30px;
+}
+.input-error {
+	border: 1px solid #8B0000;
+	background-color: #fa8072;
+}
+.error {
+	color: #8B0000;
+	font-size: 12px;
+	margin: 0;
+	position: relative;
+}
+.contact-first {
+	vertical-align: middle;
+	background-color: #e67624;
+	margin-right: 80px;
+}
+.contact-second {
+	vertical-align: middle;
+	background-color: #01d4f3;
+	position: relative;
+}
+.contact-column {
+	text-align: left;
+	display: inline-block;
+	padding: 15px 20px;
+	border-radius: 1%;
+	min-height: 430px;
+	width: 170px;
+}
+
+.contact-form__button {
+	position: absolute;
+	right: 0;
+	border-radius: 5px;
+	bottom: -50px;
+}
+.gender {
+	margin-bottom: 10px;
+}
+.gender-error {
+	color: #8B0000;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Leo</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+</head>
+<body>
+	<section class="contact">
+		<div class="container">
+			<div class="section-title contact__title">
+				Contact us
+			</div>
+			<form action="#" class="contact-form" name="contact-form">
+				<div class="contact-column contact-first">
+					<div class="contact-form__text">
+						<div>
+							First Name
+						</div>
+						<input type="text" name="first-name" class="field" data-validation="first-name">
+					</div>
+					<div class="contact-form__text">
+						<div>
+							Last Name:
+						</div>
+						<input type="text" name="last-name" class="field" data-validation="last-name">
+					</div>
+					<div class="contact-form__text">
+						<div>
+							Birthday:
+						</div>
+						<input type="text" id="datepicker" class="field" data-validation="date">
+					</div>
+					<div class="contact-form__text gender">
+						<div>					
+							Gender:
+						</div>
+						<input class="radio-gender" type="radio" name="gender" value="male" id="radio-male"> Male <br>
+						<input class="radio-gender" type="radio" name="gender" value="female" id="radio-female"> Female <br>
+						<input class="radio-gender" type="radio" name="gender" value="other" id="radio-other"> Other 
+					</div>
+				</div>
+				<div class="contact-column contact-second">
+					<div class="contact-form__text">
+						<div>					
+							Country: 
+						</div>
+						<select size="3" name="contry" class="select-country">
+							<option value="Ukraine">Ukraine</option>
+							<option value="Germany">Germany</option>
+							<option value="Poland">Poland</option>
+						</select>
+					</div>
+					<div class="contact-form__text">
+						<div>				
+							Email: 
+						</div>
+						<input type="email" data-validation="email" name="email" class="field">
+					</div>
+					<div class="contact-form__text">
+						<div>				
+							Password: 
+						</div>
+						<input type="password" data-validation="password" name="password" class="field">
+					</div>
+					<div class="contact-form__text">
+						<div>					
+							Address: 
+						</div>
+						<input type="text" data-validation="address" name="address" class="field">
+					</div>
+					<div class="contact-form__text">
+						<div>						
+							Notes: 
+						</div>
+						<input type="textarea" name="notes">
+					</div>
+					<input type="button" value="send" class="button contact-form__button" onClick="checkExist()">
+				</div>
+			</form>
+		</div>
+	</section>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/datepicker.js"></script>
+	<script src="js/validation.js"></script>
+</body>
+</html>
