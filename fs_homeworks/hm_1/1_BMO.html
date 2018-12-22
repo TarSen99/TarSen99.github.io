@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task 1_1</title>
+</head>
+<body onload="calculate('*', 10, 5)">
+	
+</body>
+<script>
+	function calculate(sign, x, y) {
+		let result;
+		switch(sign) {
+			case '+': 
+				result = x + y;
+				break;
+			case '-': 
+				result = x - y;
+				break;
+			case '*': 
+				result = x * y;
+				break;
+			case '/': 
+				result = x / y;
+				break;
+			default:
+				console.log("Sign is not exist");
+		}
+		console.log(`Result is ${result}`);
+	}
+</script>
+</html>

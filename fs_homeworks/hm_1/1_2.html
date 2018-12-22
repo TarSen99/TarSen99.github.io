@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task 1_2</title>
+</head>
+<body onload="getSimpleNums()">
+	
+</body>
+<script>
+	function getSimpleNums() {
+		let top;
+		while(true) {
+			top = parseInt(prompt("Enter the top bound: "));
+			if(top)
+				break;
+		}
+		let simpleNums = [];
+		let isSimple;
+		for(let i = 2; i < top; i++) {
+			isSimple = true;
+			for(let j = 2; j < i; j++){
+				if(i % j == 0) {
+					isSimple = false;
+					break;
+				}
+			}
+			if(isSimple)
+				simpleNums.push(i);
+		}
+		console.log(`result is ${simpleNums}`);
+	}
+</script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task 1_1</title>
+</head>
+<body onload="getAmount()">
+	
+</body>
+<script>
+	function getAmount() {
+		let days;
+		let pricePerDay = 40;
+		while(true) {
+			days = prompt("Enter number of days");
+			if(days)
+				break;
+		}
+		let totalAmount = days * pricePerDay;
+		if(days >= 7)
+			totalAmount -= 50;
+		else if(days >= 3)
+			totalAmount -= 20;
+		console.log(`Total amount is ${totalAmount}$`);
+	}
+</script>
+</html>

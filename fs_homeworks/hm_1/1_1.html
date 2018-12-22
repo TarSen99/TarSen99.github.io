@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task 1_1</title>
+</head>
+<body onload="getNum()">
+	
+</body>
+<script>
+	function getNum() {
+		while(true) {
+			let strNum = prompt("Enter number greater than 100");
+			if(!strNum)
+				break;
+			intArr = strNum.split("").filter((el) => {
+				return !(isNaN(parseInt(el)))
+			})
+			let num = intArr.join("");
+			if(num > 100){
+				console.log(`Your num is ${num}`);
+				break;
+			}
+		}
+	}
+</script>
+</html>
