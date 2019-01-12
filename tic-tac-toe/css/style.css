@@ -1,0 +1,158 @@
+body {
+	background-color: #14bdac;
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Sans', sans-serif;
+	color: #f0f0f0;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+header {
+	position: absolute;
+	width: 100vw;
+	text-align: center;
+}
+.header-arrow {
+	position: absolute;
+	left: 15px;
+	top: 5px;
+}
+.header-subtitle {
+	color: #af4e4e;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.header-subtitle img {
+	width: 100%;
+}
+
+.header-subtitle__img {
+	margin-right: 10px;
+	width: 40px;
+}
+
+.cell-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	max-width: 300px;
+}
+
+.cell {
+	border: 4px solid #0da192;
+	width: 100px;
+	height: 100px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.cell-sign {
+	position: absolute;
+}
+
+.button {
+	position: absolute;
+	bottom: 0px;
+	width: 100vw;
+	height: 6vh;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	font-size: 15px;
+	font-weight: bold;
+	background-color: #dddddd;
+	color: #262626;
+	transition-duration: 0.4s;
+}
+
+.button:hover {
+	border: 1px solid #dddddd;
+	background-color: #262626;
+	color: #dddddd;
+}
+
+.menu-button__start {
+	box-sizing: border-box;
+	position: absolute;
+	bottom: 0px;
+	width: 100vw;
+	height: 6vh;
+	border-radius: 5px;
+	border: none;
+	font-size: 15px;
+	font-weight: bold;
+	background-color: #dddddd;
+	color: #262626;
+	transition-duration: 0.4s;
+	text-align: center;
+	text-decoration: none;
+	padding-top: 10px;
+	border: 1px solid transparent;
+}
+
+.menu-button__start:hover {
+	border: 1px solid #dddddd;
+	background-color: #262626;
+	color: #dddddd;
+}
+
+.menu-header {
+	padding-top: 50px;
+}
+.menu-title {
+	font-size: 70px;
+	border-bottom: 2px solid #f0f0f0;
+}
+
+.menu-form {
+	display: flex;
+	justify-content: center;
+	max-width: 300px;
+	flex-wrap: wrap;
+}
+
+.menu-form input{
+	margin-bottom: 30px;
+	margin-top: 10px;
+	width: 300px;
+	height: 30px;
+	outline: none;
+	background-color: #0b7c71;
+	border: none;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+}
+
+.menu-form__text {
+	font-size: 30px;
+}
+.menu-form__btns {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.mode-btn {
+	font-size: 25px;
+	padding: 5px 10px 5px 10px;
+	border: 2px solid #262626;
+	border-radius: 5px;
+	transition: 0.4s;
+	color: #262626;
+	background-color: #ddd;
+}
+.mode-btn:hover, .mode-btn_selected {
+	cursor: pointer;
+	background-color: #262626;
+	color: #ddd;
+	border-color: #ddd;
+}
